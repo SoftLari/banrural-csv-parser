@@ -3,7 +3,12 @@ import * as fs from "fs";
 import { parseStatementContent } from "./utils/csv-parser";
 import { exportToCsv } from "./utils/export";
 
-import type { BanruralStatement } from "./types/index";
+import type {
+  BanruralStatement,
+  BanruralTransaction,
+  BanruralStatementHeader,
+  BanruralAccountInfo,
+} from "./types/index";
 
 /**
  * Parse a Banrural CSV statement from a file
@@ -119,4 +124,9 @@ export {
   exportToCsv,
   createSampleStatement,
   saveToFile,
+  // Export types
+  BanruralStatement,
+  BanruralTransaction,
+  BanruralStatementHeader,
+  BanruralAccountInfo,
 };

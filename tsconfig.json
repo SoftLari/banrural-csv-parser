@@ -6,7 +6,7 @@
     /* Modules */
     "module": "ESNext",                                
     "rootDir": "./src",                                  
-    "moduleResolution": "bundler",                     
+    "moduleResolution": "node",                     
     "allowImportingTsExtensions": false,
     
     "resolveJsonModule": true,                        

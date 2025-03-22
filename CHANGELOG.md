@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.3] - 2025-03-22
+
+### 🛠️ Fixed
+
+- Added proper dual module support (ESM and CommonJS)
+- Fixed direct type imports (no need to import from /dist/types)
+- Simplified package structure with better entry points
+- Fixed compatibility with require() in CommonJS environments
+
 ## [1.0.2] - 2025-03-22
 
 ### 🛠️ Fixed

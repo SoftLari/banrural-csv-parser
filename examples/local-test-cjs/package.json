@@ -1,0 +1,13 @@
+{
+  "name": "banrural-csv-parser-cjs-test",
+  "version": "1.0.0",
+  "description": "CommonJS test for banrural-csv-parser",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "banrural-csv-parser": "file:../../"
+  }
+}
