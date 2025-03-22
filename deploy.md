@@ -29,14 +29,26 @@ npm version major
 
 This command will update the version in package.json and create a git tag.
 
-### 2. Update Changelog
+### 2. Create a Git Tag
+
+If you didn't use the `npm version` command which automatically creates a tag, create a tag manually:
+
+```bash
+# Get current version from package.json
+VERSION=$(node -p "require('./package.json').version")
+
+# Create an annotated tag
+git tag -a "v$VERSION" -m "Release v$VERSION"
+```
+
+### 3. Update Changelog
 
 1. Update `CHANGELOG.md` with details about the new release:
    - Add a new section with the new version number and date
    - List all changes under appropriate categories (Added, Changed, Fixed, etc.)
    - Include links to relevant issues or pull requests
 
-### 3. Build and Test
+### 4. Build and Test
 
 1. Build the package:
 
@@ -50,7 +62,7 @@ yarn build
 yarn test
 ```
 
-### 4. Commit and Push Changes
+### 5. Commit and Push Changes
 
 1. Commit the version change and updated changelog:
 
@@ -66,7 +78,7 @@ git push origin main
 git push origin --tags
 ```
 
-### 5. Create a GitHub Release
+### 6. Create a GitHub Release
 
 1. Go to the repository on GitHub
 2. Navigate to "Releases" section
@@ -81,7 +93,7 @@ The GitHub Actions workflow will automatically:
 - Run tests across Node.js 18, 20, and 22
 - Publish the package to npm using Node.js 20 when the release is published
 
-### 6. Verify the Publication
+### 7. Verify the Publication
 
 1. Check that the GitHub Actions workflow completed successfully
 2. Verify the package is available on npm:
