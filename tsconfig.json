@@ -4,13 +4,13 @@
     "target": "es2018",                                  
   
     /* Modules */
-    "module": "NodeNext",                                
+    "module": "ESNext",                                
     "rootDir": "./src",                                  
-    "moduleResolution": "NodeNext",                     
-    "allowImportingTsExtensions": true,
+    "moduleResolution": "bundler",                     
+    "allowImportingTsExtensions": false,
     
     "resolveJsonModule": true,                        
-    "noEmit": true,
+    "noEmit": false,
 
     /* Emit */
     "declaration": true,                              

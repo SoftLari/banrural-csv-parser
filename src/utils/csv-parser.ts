@@ -3,7 +3,7 @@ import {
   BanruralStatement,
   BanruralTransaction,
   BanruralAccountInfo,
-} from "../types/index.js";
+} from "../types/index";
 
 /**
  * Parses a date string in the format DD/MM/YYYY

@@ -1,5 +1,5 @@
 import { stringify } from "csv-stringify/sync";
-import { BanruralStatement, BanruralTransaction } from "../types/index.js";
+import { BanruralStatement, BanruralTransaction } from "../types/index";
 
 /**
  * Formats a date as DD/MM/YYYY

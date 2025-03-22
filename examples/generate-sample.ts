@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import { createSampleStatement, saveToFile } from "../src/index.js";
+import { createSampleStatement, saveToFile } from "../src/index";
 import path from "path";
 
 // Check if a file path was provided as a command-line argument

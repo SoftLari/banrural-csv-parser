@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import { parseFromFile } from "../src/index.js";
+import { parseFromFile } from "../src/index";
 import path from "path";
 
 // Check if a file path was provided as a command-line argument

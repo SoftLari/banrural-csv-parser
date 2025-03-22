@@ -1,9 +1,9 @@
 import * as fs from "fs";
 
-import { parseStatementContent } from "./utils/csv-parser.js";
-import { exportToCsv } from "./utils/export.js";
+import { parseStatementContent } from "./utils/csv-parser";
+import { exportToCsv } from "./utils/export";
 
-import type { BanruralStatement } from "./types/index.js";
+import type { BanruralStatement } from "./types/index";
 
 /**
  * Parse a Banrural CSV statement from a file
