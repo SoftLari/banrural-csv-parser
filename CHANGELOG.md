@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.2] - 2025-03-22
+
+### 🛠️ Fixed
+
+- Fixed package.json exports configuration to properly define the main entry point
+- Resolved compatibility issues when importing the library in other projects
+
 ## [1.0.1] - 2025-03-22
 
 ### 🔧 Technical
